@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Skill Moves</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FIFA Skill Moves</h1>
+        <p>Learn how to perform FIFA skills easily!</p>
+    </header>
+
+    <main>
+        <section class="skills">
+            <div class="skill-card" onclick="toggleSteps('rainbow')">
+                <h2>Rainbow Flick</h2>
+                <p>Jump over defenders with style!</p>
+                <div class="steps" id="rainbow">
+                    <ol>
+                        <li>Stand still or move slowly.</li>
+                        <li>Drag the ball back with your <span class="icon">←</span> (Left Stick).</li>
+                        <li>Flick the ball forward with your <span class="icon">→</span> (Right Stick).</li>
+                        <li>Flick <span class="icon">⏺️</span> (R2) to make your player jump and go past the defender.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="skill-card" onclick="toggleSteps('elastico')">
+                <h2>Elastico</h2>
+                <p>Quickly shift ball direction!</p>
+                <div class="steps" id="elastico">
+                    <ol>
+                        <li>Push the ball right with <span class="icon">→</span> (Right Stick).</li>
+                        <li>Immediately flick it back opposite direction with <span class="icon">←</span> (Right Stick).</li>
+                        <li>Use <span class="icon">⏺️</span> (R2) to accelerate quickly after the move.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="skill-card" onclick="toggleSteps('heeltoheel')">
+                <h2>Heel to Heel Flick</h2>
+                <p>Change direction at speed!</p>
+                <div class="steps" id="heeltoheel">
+                    <ol>
+                        <li>Flick the Right Stick <span class="icon">↑</span> (Forward).</li>
+                        <li>Quickly flick it again forward with <span class="icon">↑</span> (Right Stick).</li>
+                        <li>Press <span class="icon">⏺️</span> (R2) to burst forward with speed.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="skill-card" onclick="toggleSteps('ballroll')">
+                <h2>Ball Roll</h2>
+                <p>Glide past defenders easily!</p>
+                <div class="steps" id="ballroll">
+                    <ol>
+                        <li>Hold <span class="icon">←</span> or <span class="icon">→</span> (Left Stick).</li>
+                        <li>Keep the ball moving slowly alongside your foot.</li>
+                        <li>Use <span class="icon">⏺️</span> (R2) to accelerate if needed.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="skill-card" onclick="toggleSteps('roulette')">
+                <h2>Roulette</h2>
+                <p>Spin around defenders stylishly!</p>
+                <div class="steps" id="roulette">
+                    <ol>
+                        <li>Rotate the Right Stick <span class="icon">⏺️</span> (Clockwise or Counter-clockwise).</li>
+                        <li>Start at the bottom and roll around either side.</li>
+                        <li>Use <span class="icon">⏺️</span> (R2) to accelerate through the spin.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by FIFA Skills Hub © 2025</p>
+    </footer>
+
+    <script>
+        function toggleSteps(id) {
+            const steps = document.getElementById(id);
+            steps.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
+
+
